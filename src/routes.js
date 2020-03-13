@@ -4,6 +4,6 @@ import PythonController from './app/controllers/PythonController';
 
 const routes = new Router();
 
-routes.post('/d_lambert', PythonController.store);
+routes.post('/dlambert', PythonController.store);
 
 export default routes;
