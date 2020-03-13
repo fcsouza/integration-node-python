@@ -1,0 +1,8 @@
+{
+  "name": "integration-node-python",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/fcsouza/integration-node-python.git",
+  "author": "fcsouza <fcsouza18@hotmail.com>",
+  "license": "MIT"
+}
