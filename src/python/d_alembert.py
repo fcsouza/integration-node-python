@@ -1,5 +1,6 @@
 import sys
 import random
+import json
 
 startingFunds = float(sys.argv[1])
 wagerSize = float(sys.argv[2])
@@ -86,7 +87,8 @@ while counter <= daSampSize:
     }
 
 # sys.stdout.write(str(results))
-print(str(results))
+parsed = json.dumps(results)
+print(str(parsed))
 sys.stdout.flush()
 sys.exit(0)
 
