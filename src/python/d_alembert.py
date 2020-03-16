@@ -79,11 +79,11 @@ while counter <= daSampSize:
   counter += 1
 
   results = {
-    'total_invested': daSampSize*startingFunds,
-    'total_return': ret,
+    'total_invested': '{0:.2f}'.format(daSampSize*startingFunds),
+    'total_return': '{0:.2f}'.format(ret),
     'roi': ret - (daSampSize*startingFunds),
-    'bust_rate': (da_busts/daSampSize) * 100.00,
-    'profit_rate': (da_profits/daSampSize) * 100.00
+    'bust_rate': '{0:.2f}'.format((da_busts/daSampSize) * 100.00),
+    'profit_rate': '{0:.2f}'.format((da_profits/daSampSize) * 100.00)
   }
 
 # sys.stdout.write(str(results))
@@ -100,10 +100,10 @@ def simulate(startingFunds, wagerSize, wagerCount, daSampSize):
     counter += 1
 
   results = {
-    'total_invested': daSampSize*startingFunds,
-    'total_return': ret,
+    'total_invested': '{0:.2f}'.format(daSampSize*startingFunds),
+    'total_return': '{0:.2f}'.format(ret),
     'roi': ret - (daSampSize*startingFunds),
-    'bust_rate': (da_busts/daSampSize) * 100.00,
-    'profit_rate': (da_profits/daSampSize) * 100.00
+    'bust_rate': '{0:.2f}'.format((da_busts/daSampSize) * 100.00),
+    'profit_rate': '{0:.2f}'.format((da_profits/daSampSize) * 100.00)
   }
   return results
