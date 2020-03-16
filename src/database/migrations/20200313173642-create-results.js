@@ -1,17 +1,17 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('result', {
+    return queryInterface.createTable('results', {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
         autoIncrement: true,
         allowNull: false,
       },
-      totalInvested: {
+      total_invested: {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      totalReturn: {
+      total_return: {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
@@ -19,11 +19,11 @@ module.exports = {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      bustRate: {
+      bust_rate: {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
-      profitRate: {
+      profit_rate: {
         type: Sequelize.FLOAT,
         allowNull: false,
       },
@@ -39,6 +39,6 @@ module.exports = {
   },
 
   down: queryInterface => {
-    return queryInterface.dropTable('result');
+    return queryInterface.dropTable('results');
   },
 };

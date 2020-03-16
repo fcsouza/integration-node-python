@@ -1,5 +1,5 @@
 import { PythonShell } from 'python-shell';
-// import Result from '../models/Result';
+import Result from '../models/Result';
 
 const { resolve } = require('path');
 
@@ -17,9 +17,9 @@ class PythonController {
     };
     PythonShell.run(pythonPath, options, async (err, data) => {
       if (err) throw err;
-      // const body = JSON.parse(data);
-      // const simulation = await Result.create({ ...body });
-      res.json(JSON.parse(data));
+      const body = JSON.parse(data);
+      const simulation = await Result.create(body);
+      res.json(simulation);
     });
   }
 }

@@ -1,14 +1,14 @@
 import Sequelize, { Model } from 'sequelize';
 
-class Results extends Model {
+class Result extends Model {
   static init(sequelize) {
     super.init(
       {
-        totalInvested: Sequelize.FLOAT,
-        totalReturn: Sequelize.FLOAT,
+        total_invested: Sequelize.FLOAT,
+        total_return: Sequelize.FLOAT,
         roi: Sequelize.FLOAT,
-        bustRate: Sequelize.FLOAT,
-        profitRate: Sequelize.FLOAT,
+        bust_rate: Sequelize.FLOAT,
+        profit_rate: Sequelize.FLOAT,
       },
       {
         sequelize,
@@ -19,4 +19,4 @@ class Results extends Model {
   }
 }
 
-export default Results;
+export default Result;

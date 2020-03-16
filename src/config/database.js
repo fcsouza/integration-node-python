@@ -10,7 +10,8 @@ module.exports = {
   logging: false,
   define: {
     timestamps: true,
-    underscored: false,
+    paranoid: true,
+    underscored: true,
     underscoredAll: true,
   },
 };
