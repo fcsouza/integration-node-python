@@ -19,7 +19,7 @@
     "python-shell": "^1.0.8",
     "sequelize": "^5.15.1",
     "youch": "^2.0.10",
-    "snyk": "^1.465.0"
+    "snyk": "^1.518.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
